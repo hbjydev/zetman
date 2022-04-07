@@ -3,10 +3,10 @@ package main
 import (
 	"log"
 
-	"github.com/hbjydev/zetman/internal"
+	"github.com/hbjydev/zetman"
 )
 
 func main() {
 	log.SetPrefix("[zetman] ")
-	internal.Cmd.Run()
+	zetman.Cmd.Run()
 }

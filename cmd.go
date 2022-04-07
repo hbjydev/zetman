@@ -1,4 +1,4 @@
-package internal
+package zetman
 
 import (
 	cmd "github.com/hbjydev/zetman/internal/cmd"
