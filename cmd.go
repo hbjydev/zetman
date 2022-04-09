@@ -2,7 +2,7 @@ package zetman
 
 import (
 	cmd "github.com/hbjydev/zetman/internal/cmd"
-	"github.com/rwxrob/bonzai/help"
+	"github.com/rwxrob/help"
 	Z "github.com/rwxrob/bonzai/z"
 	"github.com/rwxrob/config"
 )

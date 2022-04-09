@@ -6,8 +6,8 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/hbjydev/zetman/internal"
 	Z "github.com/rwxrob/bonzai/z"
-	config "github.com/rwxrob/config/pkg"
 	"github.com/rwxrob/fs"
 )
 
@@ -47,8 +47,9 @@ var InitCmd = &Z.Cmd{
 			Path: rootDir,
 		}
 
-		config.Init(x.Root.Name)
-		config.Write(x.Root.Name, newConfig)
+		conf := internal.GetConfig()
+		conf.Init()
+		conf.OverWrite(newConfig)
 
 		return nil
 	},
